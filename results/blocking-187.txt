@@ -1,0 +1,60 @@
+ruby 1.8.7 (2009-06-12 patchlevel 174) [universal-darwin10.0]
+Thin 1.2.7
+Sinatra 1.1.0
+memcache-client 1.8.5
+memcached VERSION 1.2.8
+
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        thin
+Server Hostname:        127.0.0.1
+Server Port:            4567
+
+Document Path:          /test
+Document Length:        1024001 bytes
+
+Concurrency Level:      160
+Time taken for tests:   25.089 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1027813700 bytes
+HTML transferred:       1027675148 bytes
+Requests per second:    39.86 [#/sec] (mean)
+Time per request:       4014.269 [ms] (mean)
+Time per request:       25.089 [ms] (mean, across all concurrent requests)
+Transfer rate:          40006.26 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   33 167.9      1     928
+Processing:   931 3957 1093.8   3656    6812
+Waiting:      252 1598 1688.1    701    5443
+Total:        932 3990 1145.9   3657    6815
+
+Percentage of the requests served within a certain time (ms)
+  50%   3657
+  66%   3872
+  75%   4538
+  80%   5612
+  90%   5682
+  95%   5684
+  98%   6362
+  99%   6591
+ 100%   6815 (longest request)

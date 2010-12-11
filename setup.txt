@@ -1,0 +1,13 @@
+Fill the memcache
+
+    require "memcache"
+    m = MemCache.new "localhost"
+    m["test"] = File.read("test.b64")[0..(1024 * 1000)];
+
+start the memcache
+
+    memcached
+
+start the test
+
+    ab -n 1000 -c 170 http://127.0.0.1:4567/test

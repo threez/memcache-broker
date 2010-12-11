@@ -1,0 +1,57 @@
+Node 0.2.5
+Memcache LIB: https://github.com/elbart/node-memcache at 07bb1d4eed1d7e083d54
+
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8124
+
+Document Path:          /test
+Document Length:        1024010 bytes
+
+Concurrency Level:      170
+Time taken for tests:   337.518 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1024074000 bytes
+HTML transferred:       1024010000 bytes
+Requests per second:    2.96 [#/sec] (mean)
+Time per request:       57378.047 [ms] (mean)
+Time per request:       337.518 [ms] (mean, across all concurrent requests)
+Transfer rate:          2963.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    4   8.6      0      34
+Processing:   544 52746 13068.8  57184   61325
+Waiting:      228 52437 13063.5  56865   61013
+Total:        564 52750 13062.0  57184   61326
+
+Percentage of the requests served within a certain time (ms)
+  50%  57184
+  66%  58259
+  75%  58521
+  80%  58924
+  90%  60390
+  95%  60968
+  98%  61163
+  99%  61259
+ 100%  61326 (longest request)
